@@ -10,6 +10,10 @@ body {
   color: #333;
   line-height: 1.6;
 }
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
 /* Navbar */
 header {
@@ -45,16 +49,72 @@ nav a {
 nav a:hover {
   color: #0077ff;
 }
+/* Home Section */
+.home {
+  height: 100vh;
+  background: linear-gradient(135deg, #f1c1c1, #e48282);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
 
+.home-content {
+  max-width: 800px;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.home span {
+  color: #452081;
+}
+
+.home .btn {
+  background: #fff;
+  color: #0077ff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.home .btn:hover {
+  background: #0056b3;
+  color: #fff;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-text {
+    text-align: center;
+  }
+  .intro-img img {
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+  }
+}
 /* Intro Section */
 .intro {
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #0077ff, #00c6ff);
+  background: linear-gradient(120deg, #d62d95, #00c6ff);
   color: #fff;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 .intro-content {
@@ -75,7 +135,7 @@ nav a:hover {
   margin-bottom: 15px;
 }
 .intro-text span {
-  color: #ffeb3b;
+  color: #181816;
 }
 .intro-text p {
   max-width: 500px;
@@ -188,7 +248,37 @@ nav a:hover {
   margin-bottom: 10px;
   color: #0077ff;
 }
-
+/* Resume */
+.resume {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+}
+.resume h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0077ff;
+}
+.resume-content {
+  max-width: 600px;
+  margin: auto;
+}
+.resume p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
+.resume .btn {
+  background: #0077ff;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.resume .btn:hover {
+  background: #0056b3;
+}
 /* Contact */
 .contact {
   padding: 80px 20px;
@@ -206,6 +296,7 @@ nav a:hover {
 }
 .contact a:hover {
   color: #0056b3;
+  color: #0077ff;
 }
 
 /* Footer */
